@@ -25,7 +25,21 @@ For Locally running the project:
     i. When user type word in the search box, display all possible product list related to search word in the list
 
 ## Screenshot
+1. Electronics catrgories clicked
+
 ![alt text](https://github.com/khushpanchariya21/ecommerceapp/blob/master/src/assets/screenshots/elect.png)
+
+2. Product card Hover on click Product details
+![alt text](https://github.com/khushpanchariya21/ecommerceapp/blob/master/src/assets/screenshots/product_hover_click_details.png)
+
+3. Product details page
+![alt text](https://github.com/khushpanchariya21/ecommerceapp/blob/master/src/assets/screenshots/productdetails.png)
+
+4. Product details page add product to cart
+![alt text](https://github.com/khushpanchariya21/ecommerceapp/blob/master/src/assets/screenshots/productdetailcart.png)
+
+5. Search Product 
+![alt text](https://github.com/khushpanchariya21/ecommerceapp/blob/master/src/assets/screenshots/searchbarhover.png)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
