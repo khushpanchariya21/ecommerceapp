@@ -1,0 +1,125 @@
+
+    .bg-custom-1 {
+        background-color: #85144b;
+      }
+      
+      .bg-custom-2 {
+      background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+      }
+      .dropdown-menu{
+          min-width: 5rem;
+      }
+
+body{
+    font-family: var(--font);
+}
+ 
+
+.container-categories{
+    display: flexl;
+    flex-direction: column;
+  
+}
+
+.listProducts
+  {width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around}
+
+.showProducts
+  {display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  justify-content: center}
+
+.infoProduct
+  {width: 18rem;
+  
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-around;
+
+}
+.card:hover{
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    transform:scale(1.2);
+    cursor: pointer;
+}
+
+.description
+ { background-color: var(--background-color);
+  border-radius: 0 0 30px 30px;
+  padding: 1rem}
+
+.title
+  {font-size: 16px;
+  color: #928F8F;
+}
+.price
+  {font-weight: boldest;
+  font-size: 22px;
+}
+.buttons
+  {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.categories
+  {width: 30px;
+  height: 30px;
+  align-self: center;}
+
+.amount
+  {transform: translate(60px, -10px);
+  background-color: var(--background-color);
+  display: flex;
+  gap: 5px;
+  border-radius: 10px;
+  justify-content: center;
+  width: 70px;
+}
+.circle
+ { border-style: none;
+  background-color: var(--background-color)
+}
+.icon-add
+  {border-style: none;
+  color: var(--background-color)}
+
+.add-button
+ { border-style: none;
+  background-color: var(--principal-color);
+  color: var(--background-color);
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 18px
+}
+.iconCart
+ { display: flex;
+  justify-content: flex-end;
+  color: var(--principal-color)}
+
+.header
+  {display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 10px;
+  font-size: 25px}
+
+@media only screen and ( min-width: 960px){
+    h3{
+        transform: translate(490px);
+        width: 200px
+    
+    }
+   
+}
+  
