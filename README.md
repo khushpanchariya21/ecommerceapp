@@ -25,7 +25,7 @@ For Locally running the project:
     i. When user type word in the search box, display all possible product list related to search word in the list
 
 ## Screenshot
-![ScreenShot](/src/assets/screenshots/latest.png)
+![alt text](https://github.com/khushpanchariya21/ecommerceapp/blob/master/src/assets/screenshots/elect.png)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
