@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 
 import { ProductService } from '../../services/product.service';
 import { IProductDetail } from 'src/app/models/product';
+import { NgxSpinnerService } from "ngx-spinner";
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -11,19 +12,24 @@ import { IProductDetail } from 'src/app/models/product';
 })
 export class ProductDetailsComponent implements OnInit {
   product: IProductDetail | undefined;
-  cart: any[] = [];
+  public count: number = 0;
+  
   constructor(
   private route: ActivatedRoute,
   private data:ProductService,
-  private location: Location) { }
-  public count: number = 0;
+  private location: Location,
+  private spinner: NgxSpinnerService
+
+  ) { }
+ 
   ngOnInit(): void {
     this.getProduct();
   }
   getProduct(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.spinner.show();
     this.data.getProductsById(id)
-      .subscribe(res => this.product = res);
+      .subscribe(res => {this.spinner.hide();this.product = res});
   }
   goBack(): void {
     this.location.back();
@@ -36,21 +42,5 @@ export class ProductDetailsComponent implements OnInit {
     console.log("done");
     return this.count;
   }
-  addProduct(item: any) {
-    let productExist = this.cart.find(cart => item.id === cart.id)
-    if(productExist === undefined){
-    this.cart.push({
-        id: item.id,
-        products: {
-          productId: item.productId,
-          title: item.title,
-          image: item.image,
-          price: item.price,
-          quantity: 1
-        }
-      })
-      console.log(this.cart)
-      localStorage.setItem('cart', JSON.stringify(this.cart));
-    }
-  }
+  
 }

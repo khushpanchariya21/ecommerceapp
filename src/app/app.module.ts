@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProductDetailsComponent } from './views/product-details/product-details.component';
 import { NavigationComponent } from './views/navigation/navigation.component';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 import {AutocompleteLibModule} from 'angular-ng-autocomplete';
 @NgModule({
@@ -22,11 +24,13 @@ import {AutocompleteLibModule} from 'angular-ng-autocomplete';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    AutocompleteLibModule
+    AutocompleteLibModule,
+     NgxSpinnerModule
     
 
   ],
